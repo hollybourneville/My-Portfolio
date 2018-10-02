@@ -1,0 +1,67 @@
+//Base Styles
+
+body {
+	font-family: 'Roboto', sans-serif;
+	background-color: red;
+}
+
+// + + Colours + +
+
+$darkBlue: #0B132B;
+$purple: #BDABD5;
+$lightBlue: #6698C2;
+$pink: #F8BBD0;
+
+// + + F O N T S + +
+
+// Font Choices
+
+$primaryFont: 'Roboto', sans-serif;
+$secondaryFont: 'Lato', sans-serif;
+$oswaldFont: 'Oswald', sans-serif;
+
+// Font Sizing
+
+$mobileDisplayFontSize: 3em;
+$displayFontSize: 3em;
+$bodyFontSize: 0.8em;
+
+// Letter Spacing
+
+$displayLetterSpacing: 0.1em;
+$displayTexttransform: uppercase;
+$bodyLineHeight: 2em;
+
+
+// + + L A Y O U T + +
+
+// Spacing
+
+$sectionPadding: 6em 3em;
+
+// Highlighting
+
+// ::selection {
+//   background: $ydaPink; /* WebKit/Blink Browsers */
+// }
+// ::-moz-selection {
+//   background: $ydaPink; /* Gecko Browsers */
+// }
+
+// + + M I X I N S + +
+
+@mixin textShadow {
+	text-shadow: 0 0 10px rgba(0,0,0,0.4);
+}
+
+@mixin boxShadow{
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+
+
+
+
+
+

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.3/dist/leaflet.css" />
+
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+</head>
+
+<body>
+  <section class=bgImage>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+          <h1>Save Our Oceans</h1>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="para col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <h2>Plastic Waste Is Killing Our Marine Life</h2>
+        <p>Did you know that plastic kills around 1 million sea birds and 100,000 marine creatures annually? Marine life can either become entangled in our rubbish or mistake it for food which causes fatal internal blockages or malnutrition.</p>
+        <p>Even when plastic breaks down, it breaks down into polymers, micro fragments and toxic chemicals that can still harm marine life and in turn us.</p>
+        <p>A recent study found that plastic was found in a third of UK-caught fish which ultimatley leads to plastic ingestion in humans.</p>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="graphHead col-lg-12 col-md-12 col-sm-12 col-xs-12">
+          <h2>Fish vs. Plastic in the Ocean</h2>
+        </div>
+    </div>
+  </div>
+  <svg class="chart">
+
+      
+
+  </svg>
+  <svg class="icons">
+      <!-- you only need to copy the path across for the icons below -->
+    <g class="fish" >
+    <path d="M80.5,48c0-1.9,3.3-6.7,5.3-9.6c3.5-5.1,5.6-8.1,4.2-10.8c-0.3-0.6-1.3-2.1-3.7-2.1  c-0.1,0-0.3,0-0.4,0c-7,0.4-14.6,6.8-18.7,12.6c-2.1-2.2-4.8-4.1-8.1-5.5c-3.7-1.7-8-2.7-12-2.9c-0.2-2.8-0.2-6.8,0-9.4  c0.1-1.1-0.3-2.3-1-3.1c-0.8-0.9-1.9-1.3-3-1.3c-0.7,0-1.5,0.2-2.1,0.6c-6.6,4-12,12.5-13.6,17.7c-6.6,2.8-11.6,7-14.7,12.2  c-2.6,4.4-3.8,9.6-3.1,14.2c0,0,0,0.1,0,0.1c0.5,2.6,3.4,3.7,6.1,4.2c-0.4,0.5-0.8,1-1.1,1.4c-0.5,0.6-0.8,1.5-0.7,2.3  s0.6,1.6,1.3,2.1c4.2,2.9,10.6,4.4,19,4.4c0.6,0,1.3,0,1.9,0c0,0,0.1,0.1,0.1,0.1c1.7,2.3,4.1,5.5,6.2,7.8c0.8,0.9,1.9,1.3,3.1,1.3  c2.2,0,4-1.7,4.2-3.9c0.1-1.8,0.2-4.1,0.3-6.3c0-0.4,0-0.8,0.1-1.2c1.8-0.6,3.6-1.5,5-2.2c1,0.9,2.1,1.8,3.1,2.5  c0.6,0.4,1.3,0.6,2,0.6c0.5,0,1-0.1,1.5-0.3c1.5-0.7,2.3-2.2,2.1-3.8c-0.1-0.7-0.3-1.5-0.5-2.3c-0.1-0.7-0.3-1.3-0.4-2  c2.4-2.2,4.3-4.7,5.7-7.8C73.3,63,80.3,67.6,84,67.6c2,0,3.6-1.2,4-3.1c0-0.1,0-0.1,0-0.2c0.6-4-1.9-7.3-4.2-10.2  C82.2,52,80.5,49.8,80.5,48z M85.1,63.9c-0.1,0.5-0.5,0.7-1,0.7c-3.3,0-13.3-7.1-16.2-13.9c-1.4,5.8-3.6,9.9-8,13.4  c0.2,2,0.8,4.3,1.1,5.9c0,0.3-0.1,0.5-0.3,0.6c-0.1,0-0.2,0.1-0.3,0.1c-0.1,0-0.2,0-0.3-0.1c-1.5-1-3.1-2.5-4.3-3.7  c-2,1.1-5.4,2.9-7.9,3.5c-0.2,0-0.3,0.1-0.5,0.1c-0.2,2.9-0.3,6.8-0.5,9.5c-0.1,0.7-0.6,1.1-1.2,1.1c-0.3,0-0.6-0.1-0.9-0.4  c-2.2-2.3-4.9-6-6.9-8.9c0,0-0.1,0-0.1,0c-0.9-1.2-1.7-2.6-2.2-3.5c-0.2-0.4-0.4-0.7-0.5-0.9c-0.4-0.7-1.4-0.9-2.1-0.5  c-0.6,0.4-0.8,1.1-0.6,1.7l-0.6,3.2c-5.9-0.3-11.1-1.4-14.6-3.8c0,0,3.4-4.1,4.3-5.9c-0.3,0-0.7,0-1.1,0c-2.8,0-7.3-0.7-7.6-2.2  c-1-6.7,2.4-18,17.4-23.8c0.5-3.7,5.8-13.2,12.6-17.3c0.2-0.1,0.4-0.2,0.5-0.2c0.6,0,1.1,0.5,1.1,1.2c-0.4,3.6-0.3,10.3,0.3,12.7  c0.4,0,0.9,0,1.3,0c7.2,0,17.6,3.5,21.6,11c2.3-5.9,11.3-14.7,18.6-15.1c0.1,0,0.2,0,0.2,0c5.2,0-8.8,13.5-8.8,19.5  C77.5,53.8,85.9,58.6,85.1,63.9z M23.3,49.3c-1.3,0-2.4,1.1-2.4,2.4c0,1.3,1.1,2.4,2.4,2.4s2.4-1.1,2.4-2.4  C25.7,50.4,24.7,49.3,23.3,49.3z"/>
+    </g>
+    <g class="plastic">
+      <path d="M56.1,7.2v2.6H43.9V7.2C43.9,6,44.9,5,46,5h7.9C55.1,5,56.1,6,56.1,7.2z"/>
+      <path d="M61.4,44.2c-1.5-9-4.3-17.5-7.2-25.5l-0.6-2.1v-1.4v0h-7v0v1.4l-0.6,2.1c-3,8-5.8,16.5-7.2,25.5H61.4z      M50,65.8c3.9,0,7.1-2.9,7.7-6.6c0.1-0.4,0.1-0.8,0.1-1.2c0-4.3-3.5-7.8-7.8-7.8c-1.7,0-3.2,0.5-4.5,1.4c-1,0.7-1.8,1.5-2.3,2.6     c-0.6,1.1-1,2.4-1,3.8c0,2.4,1.1,4.5,2.8,6C46.3,65.1,48.1,65.8,50,65.8z M50,92.9c1.5,0,1.8-0.6,2.4-1.8     c0.1-0.2,0.2-0.4,0.3-0.6c0-0.1,0.1-0.1,0.1-0.1c0.1-0.2,0.2-0.3,0.3-0.5v0c0.3-0.3,0.6-0.6,1.1-0.8c0.1,0,0.1,0,0.2-0.1     c0.2-0.1,0.3-0.1,0.5-0.1c0.1,0,0.2,0,0.3,0c0.5,0,1.1,0.2,1.5,0.5c0.4,0.3,0.8,0.6,1.2,0.9c0.4,0.3,0.9,0.7,1.3,1     s0.8,0.5,1.2,0.5c0.5,0,1.7,0,1.9-2.3c0-0.3,0.1-0.7,0.1-1.1V73.8H37.7v14.5c0,0.4,0,0.8,0.1,1.1c0.1,1.2,0.5,1.7,0.9,2     c0.4,0.3,0.8,0.3,1,0.3c0.6,0,1.7-0.8,2.5-1.5c0.4-0.3,0.8-0.6,1.2-0.9c0.5-0.3,1-0.5,1.5-0.5c0.1,0,0.2,0,0.3,0     c0.2,0,0.3,0.1,0.5,0.1c0.1,0,0.1,0,0.2,0.1c0.5,0.2,0.8,0.5,1.1,0.8v0c0.1,0.2,0.2,0.3,0.3,0.5c0,0,0,0.1,0.1,0.1     c0.1,0.2,0.2,0.4,0.3,0.6C48.2,92.3,48.5,92.9,50,92.9L50,92.9L50,92.9z M55.5,91.1c-1.5-1-0.7,3.8-5.4,3.9v0c0,0,0,0,0,0     s0,0,0,0v0c-4.7-0.1-3.9-4.9-5.4-3.9c-1.5,1-3.1,2.8-4.9,2.8c-3.2,0-4.1-2.8-4.1-5.6v-13v-1.6v-0.1v-2.5v-2V53.7     c0-0.8,0.1-1.7,0.1-2.5c0-0.5,0.1-1.1,0.2-1.6c0-0.3,0-0.5,0.1-0.7c0.1-0.7,0.2-1.4,0.3-2.1c0,0,0-0.1,0-0.2     c0.1-0.8,0.2-1.5,0.3-2.3c1.6-10.4,5-19.8,7.9-27.6h0v-3.2c-0.6-0.1-1-0.5-1-1.1v-0.2c0-0.2,0.2-0.3,0.3-0.3h0.2h12.2h0.2     c0.2,0,0.3,0.1,0.3,0.3v0.2c0,0.6-0.5,1.1-1,1.1v3.2c2.9,7.8,6.3,17.2,7.9,27.6c0.1,0.8,0.2,1.5,0.3,2.3c0,0,0,0.1,0,0.2     c0.1,0.7,0.2,1.4,0.2,2.1c0,0.2,0.1,0.5,0.1,0.7c0,0.5,0.1,1.1,0.1,1.6c0.1,0.8,0.1,1.7,0.1,2.5v15.7v2v0.5v2.1v1.6v13     c0,2.8-0.9,5.6-4.1,5.6C58.6,93.9,56.9,92.1,55.5,91.1z"/>
+    </g>
+  </svg>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="para col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <h2>How long does it take for common plastics to degrade?</h2>
+        <p> <span>Takeaway coffe cups</span> are only used for around 10 minutes but take approximatley <span>50 years</span> to break down!</p>
+        <p> <span>Plastic bottles</span> are used for around 15 minutes but take approximatley <span>450 years</span> to break down!</p>
+        <p> <span>Plastic bags</span> are used for around 15 minutes but take approximatley <span>100 years</span> to break down!</p>
+      </div>
+    </div>
+  </div>
+  <div class="info container-fluid d-flex flex-row justify-content-around flex-wrap"> 
+      <!-- <div class="d-flex flex-row justify-content-around flex-wrap"> -->
+    <div class="p-2">
+      <div class="item">
+        <h2><span class="counter">1.6</span> Billion</h2>
+      </div>
+      <p>plastic bags are used by Kiwi's every year</p>
+    </div>
+    <div class="p-2">
+      <div class="item">
+        <h2>1%</h2>
+      </div>
+      <p>of these get recycled</p>
+    </div>
+    <div class="p-2">
+      <div class="item">
+        <h2><span class="counter">160</span> Million</h2>
+      </div>
+      <p>platic bags end up in our oceans</p>
+    </div>
+  </div>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="para col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <h2>What you can do to help</h2>
+        <div class="help container-fluid d-flex flex-row justify-content-around flex-wrap"> 
+          <div class="p-2 col-lg-2 col-md-6">
+            <img src="reusecoffee.svg" alt="">
+            <h4>Re-use!</h4>
+            <p>Take reusables with you and say no to throwaway plastic.<br>You could take a reusable coffee cup, water bottle, straw and utensils.</p>
+          </div>
+          <div class="p-2 col-lg-2 col-md-6">
+            <img src="shirt.svg" alt="">
+            <h4>Say no to fast fashion!</h4>
+            <p>Did you know that many of our clothes are made from plastic<br> fibres that are just as harmful to the ocean<br> as solid plastic? Shop for clothing mindfully.</p>
+          </div>
+          <div class="p-2 col-lg-2 col-md-6">
+            <img src="toothbrush.svg" alt="">
+            <h4>Non Plastic Alternatives</h4>
+            <p>There are many non plastic alternatives for everyday items<br>Why not try a bamboo toothbrush,<br>cotton buds or beeswax food wraps.</p>
+          </div>
+          <div class="p-2 col-lg-2 col-md-6">
+            <img src="trolley.svg" alt="">
+            <h4>Shop in Bulk</h4>
+            <p>Shopping in bulk is easy and affordable.<br> There are many shops that will refill your own containers<br> with your favourite foods.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="garbage col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <h2>The Great Pacific Garbage Patch</h2>
+        <p><span>How does plastic get into the ocean and where does it end up?</span></p>
+        <p>About 20% of plastic litter in our oceans is comprised of fishing gear and other materials lost at sea by accident however the majority of it comes from land.</p>
+        <p>Most plastic that ends up in the sea comes from littering and bad waste management systems. Many parts of the world don't have the infrastructure or systems required to deal with waste including Ghana, Africa. In Ghana the Waste Management Department is currently capable of collecting only 60% of the waste generated daily. The rest is dumped in open spaces, surface drains, and into bodies of water. </p>
+
+      </div>
+    </div>
+  </div>  
+  <div id="map">
+        
+
+  <script src="https://unpkg.com/leaflet@1.3.3/dist/leaflet.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.9.1/underscore-min.js"></script>
+ 
+   <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+    <script src="jquery.counterup.min.js"></script>
+    <script src="https://d3js.org/d3.v4.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

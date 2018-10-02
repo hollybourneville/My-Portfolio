@@ -1,0 +1,140 @@
+/*All devices and mobile phone*/
+
+
+.map-area{
+	font-family: $oswaldFont;
+	position: relative;
+	min-height: 100vh;
+	z-index:1;
+
+	#map{
+		position: absolute;
+		top: 0;
+		bottom:0;
+		width: 100%;
+		height: 100vh;
+		box-sizing: border-box;
+		// padding:1em;
+	}
+}
+
+
+
+.filter{
+
+	top: 90vh;
+	height: 40px;
+	width: 90vw;
+	font-size: 20px;
+	background-color: white;
+	position: absolute;
+	z-index: 1000;
+	margin-left: 20px;
+	box-shadow: 3px 5px 10px #888888;
+	font-family: $oswaldFont;
+	display: flex;
+	border: $darkBlue solid 2px;
+
+
+		&>p{
+			padding-top: 2px;
+			padding-left: 20px;
+			color: $darkBlue;
+		}
+
+		&>a{
+			color: black;
+			margin: 2px 0 0 45px; 
+		}
+
+		.shop{
+			color:$pink;
+		}
+
+		.food{
+			color:$lightBlue;
+		}
+
+		.sites{
+			color:$purple;
+		}
+
+		.drinks{
+			color:$darkBlue;
+		}
+
+
+}
+
+@media only screen and (min-width : 40em) {
+
+
+	.filter{
+		width: 370px;
+		background-color: white;
+		color: black;
+		left: 5vh;
+
+			&>a{
+				color: #fff;
+			}
+
+	}
+
+
+}
+
+
+/*for tablet - inclusive*/
+
+@media only screen and (min-width : 60em) {
+	#map{
+		height: 88vh;
+		display: block;
+		box-sizing: border-box;
+	}
+
+
+	.filter{
+		width: 370px;
+		background-color: white;
+		color: black;
+		left: 5vh;
+
+			&>a{
+				color: #fff;
+			}
+
+	}
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

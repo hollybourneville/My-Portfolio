@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Sewing Calculator</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css?family=Merriweather|Raleway" rel="stylesheet">
+	<link rel="stylesheet" href="style.scss/style.css">
+</head>
+<body>
+	<div class="wrapper">
+		<div class="title">
+			<h1>Sewing Helper</h1>
+		</div>
+		<div class="flexBox">
+			<div class="flexItem">
+				<label for="value">Metres</label>
+					<input type="number" name="value" oninput="calculator(this.id,this.value)" onchange="calculator(this.id,this.value)" id="inputMetres">
+			</div>
+			<div class="flexItem">
+				<label for="value">Yards</label>
+				<input type="number" name="value" oninput="calculator(this.id,this.value)" onchange="calculator(this.id,this.value)"id="inputYards">
+			</div>
+		</div>
+		<div class="flexBox">
+			<div class="flexItem">
+				<label for="value">Inches</label>
+				<input type="number" name="value" oninput="calculator(this.id,this.value)" onchange="calculator(this.id,this.value)" id="inputInches">
+			</div>
+			<div class="flexItem">
+				<label for="value">CM</label>
+				<input type="number" name="value" oninput="calculator(this.id,this.value)" onchange="calculator(this.id,this.value)" id="inputCm">
+			</div>
+		</div>
+		<section class="info">
+			<h2>Sewing Tutorials</h2>
+			<div class="flexBox">
+				<div class="flexItem2">
+					<a href="http://blog.tessuti.com.au/2015/01/new-tutorial-attaching-and-joining_29/">Bias Binding - Tessuti</a>
+					<!-- <img src="dog.jpg" alt=""> -->
+				</div>
+				<div class="flexItem2">
+					<a href="https://www.tillyandthebuttons.com/2016/06/marigold-darts-pleats-pockets.html">Darts, Pleats, Pockets - Tilly</a>
+					<!-- <img src="dog.jpg" alt=""> -->
+				</div>
+				<div class="flexItem2">
+					<a href="https://byhandlondon.com/pages/circle-skirt-app">Circle Skirt Calculator - BHL</a>
+					<!-- <img src="dog.jpg" alt=""> -->
+				</div>
+				<div class="flexItem2">
+					<a href="https://byhandlondon.com/blogs/by-hand-london/the-ultimate-diy-beach-cover-up-kaftan">Ultimate Kaftan - BHL</a>
+					<!-- <img src="dog.jpg" alt=""> -->
+				</div>
+				<div class="flexItem2">
+					<a href="https://closetcasepatterns.com/install-overall-buckles-hardware/">Overall Buckles - Closet Case Files</a>
+					<!-- <img src="dog.jpg" alt=""> -->
+				</div>
+				<div class="flexItem2">
+					<a href="https://grainlinestudio.com/2014/04/30/french-seams-on-various-seam-allowances/">French Seams - Grainline Studios</a>
+					<!-- <img src="dog.jpg" alt=""> -->
+				</div>
+			</div>
+
+		</section>
+	</div>
+	<script src="script.js"></script>
+</body>
+</html>

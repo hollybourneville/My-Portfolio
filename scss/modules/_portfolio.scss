@@ -1,0 +1,277 @@
+/*All devices and mobile phone*/
+
+.portfolio-section{
+
+	.clickable {
+    	cursor: pointer;
+	}
+
+	button{
+		border:none;
+	}
+
+	margin-top:1em;
+
+	h2{
+		color:white;
+		text-align: center;
+		font-size: 1em;
+		margin: 1em 2em 1em 2em;
+		padding-bottom: 0.5em;
+		border-bottom: 2px white solid;
+	}
+
+	box-sizing: border-box;
+	// padding: 1em;
+	// background-color: rgb(237,234,230);
+
+
+	.portfolio-inner{
+
+
+		.flip-box-back{
+			display:none;
+		}
+
+
+		.flex-box{
+		padding-top: 1em;
+		margin: auto;
+
+
+		 	.flex-item{
+
+				
+		 		.flex-content{
+					height:100%;
+		 			text-align:center;
+
+		 			h3{
+
+		 				font: $oswaldFont !important;
+		 				font-weight: 200 !important;
+		 				padding-top: 28%;
+		 				color:white;
+		 				letter-spacing: 0.1em;
+
+
+		 			}
+
+		 			.tile-img{
+		 				background-size:cover;
+		 				background-position: center;
+		 				background-repeat: no-repeat;
+		 				min-height:100%;
+		 				position:relative;
+		 				width:100%;
+		 				border:none;
+
+
+		 			}
+		 			
+
+		 			.info-img{
+		 				width:30%;
+		 				height:30%;
+		 				display: block;
+		 				margin:auto;
+		 			}
+		 		}
+
+		 		&:nth-child(1){
+
+		 			.tile-img{
+		 				background-image: url('../assets/images/sewing.png');
+	
+		 			}	
+		 			
+		 		}
+
+		 		&:nth-child(2){
+		 			.tile-img{
+		 				background-image: url('../assets/images/designagency.png');	
+		 			}	
+		 		}
+
+		 		&:nth-child(3){
+		 			.tile-img{
+		 				background-image: url('../assets/images/archery.png');
+		 				background-position: left;	
+		 			}
+		 			
+		 		}
+
+		 		&:nth-child(4){
+
+		 			.tile-img{
+
+		 				.layer{
+		 					background-color: rgba($lightBlue, 0.8);
+
+		 				}	
+		 				background-image: url('../assets/images/plastic.png');	
+		 			}	
+		 			
+		 		}
+
+		 		&:nth-child(5){
+
+		 			.tile-img{
+
+			
+		 				background-image: url('../assets/images/visit.png');	
+		 			}	
+		 			
+		 		}
+
+		 	}
+ 		}
+	}
+
+	
+
+}
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px){
+.portfolio-section{
+
+	.flex-box{
+		.flex-item{
+	 			flex: 1 0 18%;
+	 			
+	 		}
+
+	}
+	.flip-box-back{
+			display:none;
+		}	
+}
+
+
+}
+@media only screen and (min-width : 20em) {
+
+	.portfolio-section{
+
+		.flex-box{
+
+			display:flex;
+	 		flex-wrap:wrap;
+
+	 		.flex-item{
+	 			flex: 1 0 45%;
+	 			
+	 		}
+
+	 		.flex-item:before {
+			    content:'';
+			    float:left;
+			    padding-top:100%;
+			}
+
+		}
+	}
+
+
+}
+
+@media only screen and (min-width : 1024px) {
+
+	.portfolio-section{
+		// min-height:100vh;
+
+		h2{
+			font-size: 1.5em;
+		}
+
+		.portfolio-inner{
+
+			.flip-box{
+			perspective: 1000px;
+		}
+
+		.flip-box-inner {
+		  position: relative;
+		  width: 100%;
+		  height: 100%;
+		  text-align: center;
+		  transition: transform 0.8s;
+		  transform-style: preserve-3d;
+		}
+	
+		.flip-box:hover .flip-box-inner {
+		  transform: rotateY(180deg);
+		}
+
+		/* Position the front and back side */
+		.flip-box-front, .flip-box-back {
+		  position: absolute;
+		  width: 100%;
+		  height: 100%;
+		  top:0;
+		  left:0;
+		  backface-visibility: hidden;
+		  display: block;
+		}
+
+
+		.flip-box-back{
+			padding: 1em;
+			border: black solid 3px;
+			padding-top: 30%;
+			display:block;
+
+			.button{
+				background: linear-gradient(to right,#786dff,#f2a4b1);
+				color:white;
+				width:50%;
+				display: block;
+				margin:auto;
+			}
+
+			.button:hover{
+				transform: scale(1.1);
+				transition:all .2s ease-in-out;
+			}
+
+			p{
+				color: $blush;
+
+			}
+			background-color: white;
+			transform: rotateY(180deg);
+		}
+
+
+		}
+
+		.flex-box{
+	 	
+
+		 	.flex-item{
+		 		flex: 1 0 18%;
+		 		height:auto;
+		 	}
+
+		 	
+ 		}
+
+	}
+
+}
+
+	
+	
+	
+
+
+			
+
+
+
+
+
+
+
+

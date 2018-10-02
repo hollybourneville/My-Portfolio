@@ -1,0 +1,41 @@
+.page-wrap{
+	min-height: 100vh;
+	width: 100%;
+	padding-bottom: 20px;
+
+
+}
+
+.grad-dynamic{
+		position:relative;
+	
+
+	}
+
+.grad-dynamic:after, .grad-dynamic:before{
+
+	position:absolute;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+	content:"";
+	z-index:-1;
+	
+}
+
+.grad-dynamic:after{
+	background: linear-gradient(45deg, #786dff 25%, #f2a4b1, #f19588, #f2a4b1, #fcc91a);
+	background-size: 1000% auto;
+	animation: animate-gradient 40s ease infinite;
+}
+
+.grad-dynamic:before{
+	background-color: yellow;
+}
+
+@keyframes animate-gradient{
+	0%{background-position: 0% 50%}
+	50%{background-position: 90% 50%}
+	100%{background-position: 0% 50%}
+}

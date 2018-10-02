@@ -1,0 +1,174 @@
+.chart{
+  
+  /*border:thin #999 solid;
+*/
+/*padding-left: 50px;*/
+}
+
+.bgImage{
+	width:100%;
+	height:500px;
+	background-image: url('turtle.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	/*background-attachment: fixed;*/
+}
+
+.bgImage h1 {
+  color:white;
+  text-align: left;
+  position:relative;
+  top:200px;
+  left: 50px;
+  font-size: 4em;
+}
+
+.icons{
+	display:none;
+}
+
+.para{
+	text-align: center;
+	background-color: #01cbe1;
+	color:white;
+	padding: 40px;
+	font-size: 1.2em;
+}
+
+.para h2{
+	padding: 20px;
+	color:#003755;
+}
+
+.para span {
+	color:#003755;
+	font-weight:bold;
+	font-size: 1.5em;
+}
+
+.graphHead{
+	text-align: center;
+	color:#003755;
+	padding-top: 1.5em;
+}
+
+.d-flex{
+	/*background-color: #003755;*/
+	padding: 30px;
+
+}
+
+.info{
+	padding-bottom: 70px;
+}
+
+.info .p-2{
+	max-width: 236px;
+}
+
+.item{
+	height: 200px;
+	width: 200px;
+	margin: 10px;
+	background-color: #003755;
+	border-radius: 50%;
+	border: #01cbe1 solid 10px;
+	color: #01cbe1;
+	text-align: center;
+	margin-bottom: 30px;
+	
+}
+
+.item h2{
+	line-height: 170px;
+}
+
+.info .p-2 p {
+	margin-top: 3em;
+	margin-bottom: 2em;
+	color:#01cbe1;
+	text-align: center;
+	font-size: 1.5em;
+	overflow-wrap:break-word;
+
+}
+
+.help img{
+	height:200px;
+
+}
+
+.help h4 {
+	color:#003755;
+}
+
+#map{
+	height:700px;
+	width:100vw;
+}
+
+.leaflet-popup-content-wrapper{
+	width: 200px;
+	padding:0;
+	/*height:300px;*/
+}
+
+.leaflet-popup-content-wrapper, .leaflet-popup-tip{
+	/*background-color:red;*/
+}
+
+.leaflet-popup-content{
+	width: 100%;
+	height:100%;
+	padding:0;
+	margin: 0;
+}
+
+/*.leaflet-popup-content img {
+	width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+    border-radius: 10px 10px 0 0;
+}*/
+
+.content{
+	padding: 10px;
+}
+
+.content h3{
+	margin-top: 0;
+}
+
+.leaflet-popup-content iframe {
+	width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+    border-radius: 10px 10px 0 0;
+
+}
+
+.garbage h2{
+	padding: 20px;
+}
+
+.garbage{
+	text-align: center;
+	/*background-color: #01cbe1;*/
+	color:#01cbe1;
+	padding: 40px;
+	font-size: 1.2em;
+}
+
+.garbage span{
+	color:#003755;
+	font-weight: bold;
+
+}
+
+
+
+
+

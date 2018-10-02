@@ -1,0 +1,74 @@
+html {
+  min-height: 100vh; }
+
+body {
+  color: #BB377D;
+  background-image: linear-gradient(#FBD3E9, #BB377D);
+  background-repeat: no-repeat;
+  font-family: 'Raleway', sans-serif;
+  line-height: 2em;
+  text-align: center;
+  min-height: 100vh;
+  text-transform: uppercase; }
+  body img {
+    display: block; }
+
+.wrapper {
+  width: 90vw;
+  margin: 0 auto;
+  /* Medium devices (landscape tablets, 768px and up) */ }
+  .wrapper .title {
+    text-transform: uppercase;
+    letter-spacing: 0.5em; }
+  .wrapper .flexBox {
+    margin: 0 auto;
+    width: 90vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; }
+    .wrapper .flexBox .flexItem {
+      margin: 1em;
+      flex: 1 0 45%; }
+    .wrapper .flexBox .flexItem2 {
+      width: 100%;
+      margin: 1em;
+      flex: 1 0 30%;
+      min-height: 40vh;
+      background-size: cover;
+      background-position: center; }
+      .wrapper .flexBox .flexItem2:nth-child(1) {
+        background-image: url("../assets/biasbinding.jpg"); }
+      .wrapper .flexBox .flexItem2:nth-child(2) {
+        background-image: url("../assets/darts.jpg"); }
+      .wrapper .flexBox .flexItem2:nth-child(3) {
+        background-image: url("../assets/skirt.jpg"); }
+      .wrapper .flexBox .flexItem2:nth-child(4) {
+        background-image: url("https://cdn.shopify.com/s/files/1/0289/4249/files/IMG_4671.JPG?v=1499982931"); }
+      .wrapper .flexBox .flexItem2:nth-child(5) {
+        background-image: url("../assets/overalls.jpg"); }
+      .wrapper .flexBox .flexItem2:nth-child(6) {
+        background-image: url("../assets/frenchseam.jpg"); }
+      .wrapper .flexBox .flexItem2 a {
+        display: block;
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+        text-indent: 100%;
+        white-space: nowrap; }
+  .wrapper label {
+    display: block;
+    text-align: center; }
+  .wrapper input {
+    color: #fffafa;
+    box-sizing: border-box;
+    width: 100%;
+    display: block;
+    background: transparent;
+    margin: 0 auto;
+    border: 0;
+    border-bottom: 2px solid #BB377D;
+    outline: none;
+    font-size: 1.5em;
+    text-align: center; }
+
+/*# sourceMappingURL=style.css.map */

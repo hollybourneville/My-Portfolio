@@ -1,0 +1,89 @@
+.staff-work {
+    @include make-row() &-tile {
+        border: 1px white solid;
+        margin: 0;
+        @include make-col(6);
+        background-size: cover;
+        background-position: center;
+    }
+}
+
+.staff-work {
+    &-tile {
+        position: relative;
+
+        &:before {
+            content: '';
+            padding-top: 100%;
+            height: 0;
+            width: 100%;
+        }
+        .staff-work-image {
+            width: 100%;
+            padding-top: 70%;
+            background-size: cover;
+            background-position: center;
+        }
+        .tile-title>span {
+            z-index: 2;
+            opacity: 0;
+            transition: all 350ms ease-in-out;
+            position: absolute;
+            top: 40%;
+            width: 90%;
+            font-size: 16px;
+            color: $ydaPinkRGB;
+            background-color: rgba(0, 0, 0, 0.5);
+            text-transform: uppercase;
+            border-radius: 2px;
+            padding: 0.25em;
+        }
+    }
+}
+
+.tile-title>span {
+    font-family: 'Roboto',
+    sans-serif;
+}
+
+@media only screen and (min-width: 40em) {
+    .staff-work {
+        @include make-row() &>.staff-work-tile {
+            margin: 0;
+            box-sizing: border-box;
+            @include make-col(4)
+        }
+
+        .staff-work {
+            &-tile {
+                .tile-title>span {
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+
+    .staff-work-container {
+        padding: 3em;
+    }
+}
+
+@media only screen and (min-width: 60em) {
+    .staff-work-container {
+        padding: 0 5em 5em 5em;
+    }
+
+    .staff-work div:hover {
+        .staff-work-image {
+            webkit-filter: blur(2px);
+            filter: blur(2px);
+        }
+    }
+
+
+    .staff-work div:hover>.tile-title>span {
+        opacity: 1;
+    }
+}
+
+@media only screen and (min-width: 80em) {}

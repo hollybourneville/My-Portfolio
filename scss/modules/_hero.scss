@@ -1,0 +1,28 @@
+.header {
+
+
+	background-position: center;
+	background-size: cover;
+	position: relative;
+	z-index: 2;
+
+
+
+	nav {
+		position: relative;
+		z-index: 5;
+	}
+
+}
+
+
+@media only screen and (min-width : 20em) {
+	.header{
+		.hero{
+			top: 60%;
+		}
+	}
+}
+
+
+

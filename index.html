@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Holly Bourneville</title>
+
+	<!-- Viewport -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	
+	<!-- Font Awesome (Icons) -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lato|Playfair+Display+SC:700|Rubik:900|Work+Sans" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
+
+
+
+
+	<link href="https://fonts.googleapis.com/css?family=Oswald:300,400,600" rel="stylesheet">
+
+	<!-- Map -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.3.4/leaflet.css">
+	<link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.46.0/mapbox-gl.css' rel='stylesheet' />
+
+	
+	<!-- Favicons -->
+	<!-- <link rel="icon" type="image/png" href="assets/images/favicon-16x16.png" sizes="16x16">
+	<link rel="icon" type="image/png" href="assets/images/favicon-32x32.png" sizes="32x32">
+	<link rel="icon" type="image/png" href="assets/images/favicon-96x96.png" sizes="96x96"> -->
+
+	<!-- Styles -->
+	<link rel="stylesheet" href="css/style.css">
+
+</head>
+<body id="index">
+	<!--
+
+	                   .               ,.
+                  T."-._..---.._,-"/|
+                  l|"-.  _.v._   (" |
+                  [l /.'_ \; _~"-.`-t
+                  Y " _(o} _{o)._ ^.|
+                  j  T  ,-<v>-.  T  ]
+                  \  l ( /-^-\ ) !  !
+                   \. \.  "~"  ./  /c-..,__
+                     ^r- .._ .- .-"  `- .  ~"--.
+                      > \.                      \
+                      ]   ^.                     \
+                      3  .  ">            .       Y
+         ,.__.--._   _j   \ ~   .         ;       |
+        (    ~"-._~"^._\   ^.    ^._      I     . l
+         "-._ ___ ~"-,_7    .Z-._   7"   Y      ;  \        _
+            /"   "~-(r r  _/_--._~-/    /      /,.--^-._   / Y
+            "-._    '"~~~>-._~]>--^---./____,.^~        ^.^  !
+                ~--._    '   Y---.                        \./
+                     ~~--._  l_   )                        \
+                           ~-._~~~---._,____..---           \
+                               ~----"~       \
+                                              \
+	
+	I LOVE CATS!
+
+	-->
+	<div class="wrapper">
+		<div class="page-wrap grad-dynamic">
+			<div class="header">
+				<nav>
+					<div class="">
+						<ul class="navigation">
+							<li><a href="#" class="active" data-to=".about">about</a></li>
+							<li><a href="#"  data-to=".portfolio-section">portfolio</a></li>
+							<li><a href="#" data-to=".contact">Contact</a></li>
+					</ul>
+						<div class="row">
+							<div class="col-12 title">
+								<h1>Holly Bourneville</h1>
+								<p>Web Design</p>
+							</div>
+						</div>
+					</div>
+				</nav>
+				
+				<div class="hero">
+
+					<div class="hero-inner">
+
+					</div>
+					
+				</div>
+			</div>
+
+			<!-- PORTFOLIO -->
+			<div class="portfolio-section ">
+				<div class=" portfolio-inner">
+					<h2>Portfolio</h2>
+					<div class=" flex-box">
+						<div class="flex-item flip-box" data-toggle="modal" data-target="#sewingModal">
+							<div class="flex-content flip-box-inner">
+								<button class="tile-img flip-box-front clickable" data-toggle="modal" data-target="#sewingModal">
+								</button>
+								<div class="flip-box-back">
+									<p>Sewing Calculator/Length Converter using Javascript</p>
+									<button class="button" data-toggle="modal" data-target="#sewingModal">More Info</button>
+								</div>
+							</div>
+						</div>
+						<div class="flex-item flip-box" data-toggle="modal" data-target="#designModal">
+							<div class="flex-content flip-box-inner">
+								<button class="tile-img flip-box-front clickable" data-toggle="modal" data-target="#designModal">
+								</button>
+								<div class="flip-box-back">
+									<p>An Experimental mock for a Creative Agency using Behance API</p>
+									<button class="button" data-toggle="modal" data-target="#designModal">More Info</button>
+								</div>
+							</div>
+						</div>
+						<div class="flex-item flip-box" data-toggle="modal" data-target="#archeryModal">
+							<div class="flex-content flip-box-inner">
+								<button class="tile-img flip-box-front clickable" data-toggle="modal" data-target="#archeryModal">
+								</button>
+								<div class="flip-box-back">
+									<p>Archery OSA Online Event Management and Scoring System</p>
+									<button class="button" data-toggle="modal" data-target="#archeryModal">More Info</button>
+								</div>
+							</div>
+						</div>
+						<div class="flex-item flip-box" data-toggle="modal" data-target="#plasticModal">
+							<div class="flex-content flip-box-inner">
+								<button class="tile-img flip-box-front clickable" data-toggle="modal" data-target="#plasticModal">
+								</button>
+								<div class="flip-box-back">
+									<p>Save our Oceans - an informative page using D3</p>
+									<button class="button" data-toggle="modal" data-target="#plasticModal">More Info</button>
+								</div>
+							</div>
+						</div>
+						<div class="flex-item flip-box" data-toggle="modal" data-target="#placesModal">
+							<div class="flex-content flip-box-inner">
+								<button class="tile-img flip-box-front clickable" data-toggle="modal" data-target="#placesModal">
+								</button>
+								<div class="flip-box-back">
+									<p>Visit Auckland using Foursquare API and leaflet Map</p>
+									<button class="button" data-toggle="modal" data-target="#placesModal">More Info</button>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+			<div class="about">
+				<h2>About</h2>
+				<p>Hi, I'm Holly.</p>
+				<P>I am currently studying Web and UX Design at Yoobee School of Design in Auckland. I am due to graduate this course in mid December 2018.</P>
+				<p>I discovered my passion for Web Design and Development around a year ago and have been immersing myself in it ever since. I am passionate about Web Development as it allows me to express my creative side and there is always something new to learn.</p>
+				<p>If you would like to see some of my work, check out my portfolio above.</p>
+			</div>
+			<!-- contact -->
+			<div class="contact">
+				<h2>Contact</h2>
+				<p>hollybourneville@hotmail.com</p>
+				<p>021 058 1945</p>
+			</div>
+
+
+		<!-- Modal -->
+		<div id="modals">
+			<!-- sewing modal -->
+			<div class="modal fade" id="sewingModal" tabindex="-1" role="dialog" aria-labelledby="sewingModalLabel" aria-hidden="true">
+		  		<div class="modal-dialog" role="document">
+		    		<div class="modal-content">
+		      			<div class="modal-header">
+		        			<h5 class="modal-title" id="sewingModalLabel">Sewing Converter - Personal Project</h5>
+		        			<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		          				<span aria-hidden="true">&times;</span>
+		        			</button>
+		      			</div>
+		      			<div class="modal-body">
+					        <p>I built this site as a personal project for myself as I am always needing to convert measurements when sewing.</p>
+					        <p>This can easily be done on google but I wanted to practice my skills and also save some of my commonly used tutorials in one site.</p>
+					        <p>View the site <a href="./sewingCalculator/index.html" target="_blank">here</a></p>
+		      			</div>
+		    		</div>
+		  		</div>
+			</div> 
+			<!-- design agency modal -->
+			<div class="modal fade" id="designModal" tabindex="-1" role="dialog" aria-labelledby="designModalLabel" aria-hidden="true">
+		  		<div class="modal-dialog" role="document">
+		    		<div class="modal-content">
+		      			<div class="modal-header">
+		        			<h5 class="modal-title" id="designModalLabel">Creative Agency Website</h5>
+		        			<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		          				<span aria-hidden="true">&times;</span>
+		        			</button>
+		      			</div>
+		      			<div class="modal-body">
+					        <p>This was an experimental mockup for a creative agency that was created for a group project at Yoobee.</p>
+					        <p>This page was created using the behance API to pull live portfolio data.</p>
+					        <p>View the site <a href="./YDA-Website-master/index.html" target="_blank">here</a></p>
+		      			</div>
+		    		</div>
+		  		</div>
+			</div>
+			<!-- archery -->
+			<div class="modal fade" id="archeryModal" tabindex="-1" role="dialog" aria-labelledby="archeryModalLabel" aria-hidden="true">
+		  		<div class="modal-dialog" role="document">
+		    		<div class="modal-content">
+		      			<div class="modal-header">
+		        			<h5 class="modal-title" id="archeryModalLabel">Archery OSA</h5>
+		        			<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		          				<span aria-hidden="true">&times;</span>
+		        			</button>
+		      			</div>
+		      			<div class="modal-body">
+					        <p>This was a project I worked on for an online event management and scoring system for Archery NZ.</p>
+					        <p>This page was created using a Bootstrap theme and is still in development.</p>
+					        <p>View the site <a href="https://dev.archeryosa.com/" target="_blank">here</a></p>
+		      			</div>
+		    		</div>
+		  		</div>
+			</div> 
+			<!-- plastic -->
+			<div class="modal fade" id="plasticModal" tabindex="-1" role="dialog" aria-labelledby="plasticModalLabel" aria-hidden="true">
+		  		<div class="modal-dialog" role="document">
+		    		<div class="modal-content">
+		      			<div class="modal-header">
+		        			<h5 class="modal-title" id="plasticModalLabel">Save Our Oceans</h5>
+		        			<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		          				<span aria-hidden="true">&times;</span>
+		        			</button>
+		      			</div>
+		      			<div class="modal-body">
+					        <p>This was an experimental project I worked on to build a customized graph using D3 and a map using Leaflet.</p>
+					        <p>View the site <a href="./FormativePlasticNew/index.html" target="_blank">here</a></p>
+		      			</div>
+		    		</div>
+		  		</div>
+			</div> 
+			
+			<div class="modal fade" id="placesModal" tabindex="-1" role="dialog" aria-labelledby="placesModalLabel" aria-hidden="true">
+		  		<div class="modal-dialog" role="document">
+		    		<div class="modal-content">
+		      			<div class="modal-header">
+		        			<h5 class="modal-title" id="placesModalLabel">Visit Auckland</h5>
+		        			<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		          				<span aria-hidden="true">&times;</span>
+		        			</button>
+		      			</div>
+
+		      			<div class="modal-body">
+					        <p>This was an experimental group project I worked on to build a place finder site using Leaflet and Foursquare.</p>
+					        <p>View the site <a href="./Visit-Auckland-hollyJs/index.html" target="_blank">here</a></p>
+		      			</div>
+		    		</div>
+		  		</div>
+			</div> 
+		</div>
+
+	</div>	
+							
+
+		
+
+	<!-- jQuery -->
+	<script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js"
+	integrity="sha512-lInM/apFSqyy1o6s89K4iQUKg6ppXEgsVxT35HbzUupEVRh2Eu9Wdl4tHj7dZO0s1uvplcYGmt3498TtHq+log=="
+	crossorigin=""></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+	<script src="scripts/isotope.pkgd.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
+	<script src="scripts/underscore.js"></script>
+	<script src="scripts/template7.js"></script>
+	<script src="scripts/scripts.js"></script>
+</body>
+</html>

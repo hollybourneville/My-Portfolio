@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Visit Auckland | Home</title>
+
+	<!-- Viewport -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Font Awesome (Icons) -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
+
+	<link href="https://fonts.googleapis.com/css?family=Oswald:300,400,600" rel="stylesheet">
+
+	<!-- Map -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.3.4/leaflet.css">
+	<link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.46.0/mapbox-gl.css' rel='stylesheet' />
+
+	<!-- Styles -->
+	<link rel="stylesheet" href="css/style.css">
+
+</head>
+<body id="index">
+	<div class="wrapper">
+
+		<div class="header">
+			<nav>
+
+				<div class="logo">
+					<a href="index.html">
+						<img src="assets/images/visit-auckland-logo-white.png" alt="">
+					</a>
+				</div>
+
+				<div class="bars">
+					<i class="fas fa-bars"></i>
+				</div>
+
+				<ul class="navigation mobile-nav flex-container" data-nav="close">
+					<li><a href="/" class="active flex-li" data-to=".header">Home</a></li>
+					<li><a href="staff.html" class="flex-li" data-to=".popular">Popular</a></li>
+					<li><a href="" class="flex-li" data-to=".map-area">Map</a></li>
+					<li><a href="" class="flex-li" data-to=".upcoming-events">Events</a></li>
+					<li><a href="" class="login-button flex-li" data-target="#loginModal" data-toggle="modal">Login</a></li>
+				</ul>
+
+				<ul class="navigation desktop-nav" data-nav="close">
+					<li><a href="/" class="active" data-to=".header">Home</a></li>
+					<li><a href="#" data-to=".popular">Popular</a></li>
+					<li><a href="#" data-to=".map-area">Map</a></li>
+					<li><a href="#" data-to=".upcoming-events">Events</a></li>
+					<li><a href="" class="login-button" data-target="#loginModal" data-toggle="modal">Login</a></li>
+				</ul>
+			</nav>
+			
+			<div class="hero">
+
+				<div class="hero-inner">
+					<h1>We help you find awesome places</h1>
+					<h2>Navigate Auckland like a pro!</h2>
+					<div class="hero-button">
+						<a href="#" data-to=".map-area">Go To Map</a>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+		<!-- popular section -->
+		<div class="popular">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-xs-12 col-md-6" id=pop-content>
+						<h1>Popular</h1>
+						<p>Want a short selection of Auckland most popular venues? Click on a venue for more information!</p>
+						<div class="new-info-container"></div>
+					</div>
+
+					<!-- popular grid -->
+					<div class="col-xs-12 col-md-6" id="grid-container">
+						<div class="grid-bla">
+							<div class="grid-sizer-bla"></div>
+							<!-- grid items -->
+						
+							
+						</div>
+					</div>
+				</div>
+			</div>
+		</div><!-- end of popular -->
+
+		<!-- map section -->
+		<div class="map-area">
+			
+			<div class="right" id="map"></div>
+			
+
+			<div class="filter">
+				<p>Filter:</p>
+				<a class="filter-icon shop" data-type="shop" href=""><i class="fas fa-shopping-bag"></i></a>
+				<a class="filter-icon food" data-type="food" href=""><i class="fas fa-utensils"></i></a>
+				<a class="filter-icon drinks" data-type="drinks" href=""><i class="fas fa-cocktail"></i></a>
+				<a class="filter-icon sites" data-type="sites" href=""><i class="fas fa-map-marked-alt"></i></a>
+			</div>
+
+		</div><!-- end of map section -->
+		
+		<!-- events section -->
+		<section class="upcoming-events">
+
+			<div class="heading">
+				<h1>UPCOMING EVENTS</h1>
+				<div class="info">
+					<p class="info-p">Check out some amazing events happening in auckland over the coming months!</p>
+				</div>
+			</div>
+
+			<div class="events">
+				<img class="upcoming-events-images" src="assets/images/music-final.jpg" alt="">
+				<div class="details">
+					<i class="left fas fa-plus"></i>
+					<!-- <i class="left fas fa-plus-circle"></i> -->
+					<i class="right fas fa-star"></i>
+					<!-- <i class="right fas fa-plus-circle"></i> -->
+					<h2 class="upcoming-events-h2">Summer Jams Music Festival</h2>
+					<p class="upcoming-events-p">29 October 2018</p>
+				</div>
+			</div>
+
+			<div class="events">
+				<img class="upcoming-events-images" src="assets/images/food-final.jpg" alt="">
+				<div class="details">
+					<i class="left fas fa-plus"></i>
+					<!-- <i class="left fas fa-plus-circle"></i> -->
+					<i class="right fas fa-star"></i>
+					<!-- <i class="right fas fa-plus-circle"></i> -->
+					<h2 class="upcoming-events-h2">Street Food Market</h2>
+					<p class="upcoming-events-p">Silo park - Friday Nights 6pm - 11pm</p>
+				</div>
+			</div>
+
+			<div class="events">
+				<img class="upcoming-events-images" src="assets/images/open-final.jpg" alt="">
+				<div class="details">
+					<i class="left fas fa-plus"></i>
+					<!-- <i class="left fas fa-plus-circle"></i> -->
+					<i class="right fas fa-star"></i>
+					<!-- <i class="right fas fa-plus-circle"></i> -->
+					<h2 class="upcoming-events-h2">Aucklands Newest Bar</h2>
+					<p class="upcoming-events-p">Opening Soon!</p>
+				</div>
+			</div>	
+		</section> <!-- end of events section -->
+
+		<!-- footer section -->
+		<footer>
+			<div class="footer-container">
+				<div class="logo-address footer-row">
+					<img src="assets/images/visit-auckland-logo-white.png" alt="">
+					<p>3 City Road, Grafton, Auckland</p>
+				</div>
+				<div class="footer-links footer-row">
+					<h1>Quick Links</h1>
+					<ul class="footer-page-links">
+						<li class="hover">Home</li>
+						<li class="hover">Popular</li>
+						<li class="hover">Map</li>
+					</ul>
+
+				</div>
+
+				<div class="footer-social footer-row">
+					<h1>Follow Us</h1>
+					<div class="social-row">
+						<i class="fab fa-facebook-square"></i>
+						<p class="hover">Facebook</p>
+					</div>
+					<div class="social-row">
+						<i class="fab fa-instagram"></i>
+						<p class="hover">Instagram</p>
+					</div>
+					<div class="social-row">
+						<i class="fab fa-twitter-square"></i>
+						<p class="hover">Twitter</p>
+					</div>
+					<div class="social-row">
+						<i class="fab fa-youtube-square"></i>
+						<p class="hover">YouTube</p>
+					</div>
+				</div>
+
+				<div class="footer-signup footer-row">
+					<h1>Subscribe to our newsletter</h1>
+					<h2>We will send you weekly emails with what were doing</h2>
+					<div class="signupbox">
+						<div class="input-area">
+							<p>E-mail</p>
+						</div>
+						<div class="submit-box">
+							<i class="fas fa-sign-in-alt"></i>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer><!-- end of footer section -->
+
+
+		<!-- login modal -->
+		<div class="modal" tabindex="-1" role="dialog" id="loginModal">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-body">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+						<div class="login-area">
+							<div class="login-title">
+								<h1>Login</h1>
+							</div>
+							<div class="login-fields">
+								<form>
+									<div class="form-row">
+										<input type="text" name="Username" placeholder="Username">
+									</div>
+									<div class="form-row">
+										<input type="text" name="Passsword" placeholder="Password">	
+									</div>
+									<div class="form-row">
+										<input type="submit" value="Submit" id="submit">
+									</div>
+								</form>
+
+								<div class="social-title">
+									<h1>Or...</h1>
+								</div>
+								<div class="social">
+									<div class="social-row"> 
+										<i class="fab fa-facebook-f"></i>
+										<p>Sign in with Facebook</p>
+									</div>
+									<div class="social-row"> 
+										<i class="fab fa-google"></i>
+										<p>Sign in with Google</p>
+									</div>
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div><!-- end of login modal -->
+
+		<!-- marker modal -->
+		<div class="modal marker-container" id='venueModal' tabindex="-1" role="dialog">
+				
+		</div><!-- marker popup end -->
+
+	</div><!-- end of wrapper -->
+
+	<!-- template 7 scripts -->
+
+	<!-- script for marker -->
+	<script id="templateMarker" type="text/template7">
+		<div id="marker-container" class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header venue-image" style="background-image:url({{photo}})">
+					<!-- <img class="venue-image" src="{{photo}}" alt=""> -->
+					<button type="button" id="close" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<h5 class="modal-title">{{name}}</h5>
+					<p>{{address}} Auckland City</p>
+					{{#if website}}
+						<a class="link" href={{website}}>Website</a>
+					{{/if}}
+					<p>Hours: {{hours}} {{weekDays}} {{weekHours}} {{weekendDays}} {{weekendHours}} </p>
+					<p>Price range: {{price}}</p>
+					<button class="directions">Get Directions</button>
+				</div>
+			</div>
+		</div>
+	</script> <!-- end of marker script -->
+
+	<!-- script for popular section -->
+	<script id="templatePopular" type="text/template7">
+
+		<div class="grid-item-bla">				
+			<div class="grid-content size" data-for="venue{{id}}">
+				<div class="image" style="background-image:url({{bestPhoto.prefix}}300x300{{bestPhoto.suffix}})"></div>
+				<div class="pop-info">
+					<i class="fas fa-plus" data-plus="unclicked"></i>
+					<p class="pop-name">{{name}}</p>
+					<i class="fas fa-star"></i>
+				</div>
+			</div>
+		</div>
+	</script>
+
+	<!-- script for extra info in popular section -->
+	<script id="templateInfo" type="text/template7">
+		<div class="new-info venue{{id}}">
+			<h5 class="info-name">{{name}}</h5>
+			<p>{{location.address}} Auckland City</p>
+			{{#if url}}
+			<a class="link" href={{url}}>Website</a>
+			{{/if}}
+			<p>Hours: {{hours}} {{weekDays}} {{weekHours}} {{weekendDays}} {{weekendHours}} </p>
+			{{#if price}}
+			<p>Price range: {{price.message}}</p>
+			{{/if}}
+		</div>	
+	</script>						
+
+	<!-- other scripts -->
+	<script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js"
+	integrity="sha512-lInM/apFSqyy1o6s89K4iQUKg6ppXEgsVxT35HbzUupEVRh2Eu9Wdl4tHj7dZO0s1uvplcYGmt3498TtHq+log=="
+	crossorigin=""></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+	<script src="scripts/isotope.pkgd.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
+	<script src="scripts/underscore.js"></script>
+	<script src="scripts/template7.js"></script>
+	<script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.46.0/mapbox-gl.js'></script>
+	<script src="scripts/scripts.js"></script>
+
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDknEtmtQzCjjFGOAJiHVFKcBegAsUBUKc&callback=initMap"
+    async defer></script>
+
+</body>
+</html>

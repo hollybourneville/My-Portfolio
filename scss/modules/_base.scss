@@ -1,0 +1,84 @@
+//Base Styles
+
+body {	
+		margin:0;
+		padding:0;
+		font-family: 'Work Sans', sans-serif;
+	
+
+	h2{
+		font-family: 'Lato', sans-serif;
+		font-size: 1.5em;
+		text-transform: uppercase;
+		letter-spacing: 0.1em;
+
+	}
+	
+
+	p{
+		// line-height: 1.5em;
+			font-family: 'Roboto', sans-serif;
+			font-weight:100;
+		// font-family: 'Work Sans', sans-serif;
+	}
+}
+
+
+// + + Colours + +
+$yellow: #EAD94C;
+ $blush: #EF9A9A;
+ $teal: #0097A7;
+ $darkPurple: rgb(32,29,76);
+ $lightPurple: rgb(209,208,228);
+ $lightGreen:#81C784;
+
+ $darkBlush: darken( $blush, 12% );
+
+
+
+
+$darkBlue: #0B132B;
+$purple: #BDABD5;
+$lightBlue: #81D4FA;
+
+// + + F O N T S + +
+
+// Font Choices
+
+$primaryFont: 'Roboto', sans-serif;
+$secondaryFont: 'Lato', sans-serif;
+$oswaldFont: 'Oswald', sans-serif;
+
+// Font Sizing
+
+$mobileDisplayFontSize: 3em;
+$displayFontSize: 3em;
+$bodyFontSize: 0.8em;
+
+// Letter Spacing
+
+$displayLetterSpacing: 0.1em;
+$displayTexttransform: uppercase;
+$bodyLineHeight: 2em;
+
+
+// + + L A Y O U T + +
+
+// Spacing
+
+$sectionPadding: 6em 3em;
+
+// Highlighting
+
+// ::selection {
+//   background: $ydaPink; /* WebKit/Blink Browsers */
+// }
+// ::-moz-selection {
+//   background: $ydaPink; /* Gecko Browsers */
+// }
+
+// + + M I X I N S + +
+
+@mixin textShadow {
+	text-shadow: 0 0 10px rgba(0,0,0,0.4);
+}
