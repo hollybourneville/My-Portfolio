@@ -1,16 +1,20 @@
 .about{
 	margin: 2em 2em 2em 2em;
 
+
 	// min-height: 70vh;
 	// color:white;
+	.about-text{
 
 		p{	
-		
+			text-align: center;
 			color:white;
 			margin: 2em;
-		}
+		}	
 
-		h2{
+	}
+
+	h2{
 			text-align: center;
 			color:white;
 			padding-top: 0.5em;
@@ -22,12 +26,18 @@
 		border-bottom: 2px white solid;
 
 		}
+		
 
 }
 
 @media only screen and (min-width : 40em) {
 
 	.about{
+
+		.about-text{
+			width:70%;
+			margin:auto;
+		}
 
 		h2{
 			font-size: 1.5em;
